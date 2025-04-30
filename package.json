@@ -17,6 +17,7 @@
     "tsconfig.json"
   ],
   "scripts": {
+    "dev": "cd playground && pnpm dev",
     "prepack": "unbuild",
     "release": "changelogen --release && npm publish --access public && git push --follow-tags"
   },
