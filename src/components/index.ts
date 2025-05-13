@@ -1,3 +1,4 @@
-import ShowGitHubUser from "./ShowGitHubUser.vue";
+import Booklet from "./Booklet.vue"
+import BookletPage from "./BookletPage.vue"
 
-export { ShowGitHubUser };
+export { Booklet, BookletPage }
