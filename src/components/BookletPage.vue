@@ -40,32 +40,41 @@ defineProps({
 
 @media print {
   .booklet-page {
-    max-width: none;
-    min-width: 20%;
+    box-sizing: border-box;
+    /* max-width: 25%; */
+    min-width: 0;
+    width: 25%;
+    /* width: calc(25%-8rem); */
     height: auto;
     min-height: 40%;
 
   }
   .page-1 {
     order: 2;
+    border-left: none;
   }
   .page-2 {
     order: 3;
+    border-left: none;
   }
   .page-3 {
     order: 4;
+    border-left: none;
   }
   .page-4 {
     order: 8;
     rotate: 180deg;
+    border-right: none;
   }
   .page-5 {
     order: 7;
     rotate: 180deg;
+    border-right: none;
   }
   .page-6 {
     order: 6;
     rotate: 180deg;
+    border-right: none;
   }
   .page-7 {
     order: 5;

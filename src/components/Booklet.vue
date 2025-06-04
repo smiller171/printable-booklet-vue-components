@@ -9,22 +9,6 @@ let bookletPrint = () => {
   window.print()
 }
 
-let paperSizes: string[] = [
-  "letter",
-  // "half-letter",
-  "legal",
-  // "half-legal",
-  "A3",
-  "A4",
-  "A5",
-  "B4",
-  "B5",
-  "ledger",
-  // "half-ledger",
-  "JIS-B5",
-  "JIS-B6"
-]
-
 let orientation = ref('landscape')
 </script>
 
@@ -63,6 +47,7 @@ let orientation = ref('landscape')
   justify-content: flex-start;
   break-inside: avoid;
   break-after: auto;
+  gap: 0;
   /*   gap: 1em; */
   /* height: 100vh; */
 }
