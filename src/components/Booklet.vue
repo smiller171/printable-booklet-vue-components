@@ -72,7 +72,10 @@ let orientation = ref('landscape')
     justify-content: center;
     gap: 0;
     margin: 0;
-    width: 100vw;
+    /* width: 100vw; */
+    width: 10in;
+    height: 7in;
+    max-height: 7in;
   }
 
   .booklet-portrait {
