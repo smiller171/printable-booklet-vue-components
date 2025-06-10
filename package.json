@@ -28,7 +28,10 @@
     "src",
     "tsconfig.json"
   ],
-  "repository": "github:smiller171/printable-booklet-vue-components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smiller171/printable-booklet-vue-components.git"
+  },
   "scripts": {
     "dev": "cd playground && pnpm dev",
     "prepack": "unbuild",
