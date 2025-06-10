@@ -1,7 +1,19 @@
 {
-  "name": "@barbapapazes/vue-library",
-  "version": "0.0.1",
-  "description": "",
+  "name": "@millergeek/vue-library-printable-zine",
+  "version": "v1.0.0-rc1",
+  "description": "A vue library for creating printable zines",
+  "keywords": [
+    "vue",
+    "library",
+    "components",
+    "zine",
+    "printable",
+    "booklet"
+  ],
+  "homepage": "https://github.com/millergeek/printable-booklet-vue-components",
+  "bugs": {
+    "url": "https://github.com/millergeek/printable-booklet-vue-components/issues"
+  },
   "type": "module",
   "exports": {
     ".": {
@@ -9,20 +21,25 @@
       "import": "./dist/index.mjs"
     }
   },
-  "main": "dist/index.mjs",
+  "browser": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
     "src",
     "tsconfig.json"
   ],
+  "repository": "github:smiller171/printable-booklet-vue-components",
   "scripts": {
     "dev": "cd playground && pnpm dev",
     "prepack": "unbuild",
-    "release": "changelogen --release && npm publish --access public && git push --follow-tags"
+    "release": "changelogen --release --publish && git push --follow-tags"
   },
-  "author": "Estéban Soubiran <e.soubiran25@gmail.com> (https://github.com/barbapapazes/)",
-  "license": "MIT",
+  "author": {
+    "name": "Scott Miller",
+    "email": "scott@millergeek.xyz",
+    "url": "https://millergeek.xyz"
+  },
+  "license": "CC-BY-NC-4.0",
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "devDependencies": {
     "changelogen": "^0.5.7",
