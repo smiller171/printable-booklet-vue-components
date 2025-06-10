@@ -1,6 +1,6 @@
 {
   "name": "@millergeek/vue-library-printable-zine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A vue library for creating printable zines",
   "keywords": [
     "vue",
@@ -35,7 +35,7 @@
   "scripts": {
     "dev": "cd playground && pnpm dev",
     "prepack": "unbuild",
-    "release": "changelogen --release && npm publish --access public --otp=(ykman oath accounts code --single 'NPM:millergeek') && git push --follow-tags"
+    "release": "changelogen --release && npm publish --access public --otp=$(ykman oath accounts code --single 'NPM:millergeek') && git push --follow-tags"
   },
   "author": {
     "name": "Scott Miller",
