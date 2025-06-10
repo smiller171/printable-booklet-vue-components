@@ -1,26 +1,12 @@
 <script lang="ts" setup>
 import { BookletPage } from '.'
-import { ref } from 'vue'
 
-defineProps({})
-
-let bookletPrint = () => {
-  // printArea.dataset.print = "booklet"
-  window.print()
-}
-
-let orientation = ref('landscape')
+const props = defineProps({
+  orientation: { type: String, default: 'landscape' }
+})
 </script>
 
 <template>
-  <fieldset id="printStyle">
-    <legend>How would you like to print?</legend>
-    <label for="orientation">Half page?</label>
-    <input type="checkbox" id="orientation" v-model="orientation" true-value="portrait" false-value="landscape"/>
-    <br><br>
-    <button @click="bookletPrint" class="printButton">Print Booklet</button>
-  </fieldset>
-
   <div class="booklet" :class="['booklet-' + orientation]">
     <slot>
       <BookletPage :pageNumber=1></BookletPage>
