@@ -38,16 +38,19 @@ defineProps({
   break-before: avoid;
 }
 
+/* .booklet-page > * {
+  break-inside: avoid;
+  break-before: avoid;
+  break-after: avoid;
+} */
+
 @media print {
   .booklet-page {
     box-sizing: border-box;
-    /* max-width: 25%; */
     min-width: 0;
     width: 25%;
-    /* width: calc(25%-8rem); */
-    height: auto;
-    min-height: 40%;
-
+    height: 50%;
+    print-color-adjust: exact;
   }
   .page-1 {
     order: 2;
