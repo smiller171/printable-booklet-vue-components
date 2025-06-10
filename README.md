@@ -47,7 +47,7 @@ Or, if you only want to use a small subset of components, drop them in individua
 Install the library with NPM:
 
 ```bash
-npm install vue-component-library
+npm install @millergeek/vue-library-printable-zine
 ```
 
 You can choose to import the library globally, which will make all of the components available across your project (but will also increase the bundle size of your application), or you can import individual components locally.
@@ -57,9 +57,9 @@ You can choose to import the library globally, which will make all of the compon
 Register the library as a plugin to globally install all components:
 
 ```js
-import VueComponentLibrary from 'vue-component-library'
+import VueLibraryPrintableZine from 'vue-library-printable-zine'
 
-Vue.use(VueComponentLibrary)
+Vue.use(VueLibraryPrintableZine)
 ```
 
 #### Import components locally
@@ -67,7 +67,7 @@ Vue.use(VueComponentLibrary)
 Or, import components individually for local registration:
 
 ```js
-import { Booklet, BookletPage } from 'vue-component-library'
+import { Booklet, BookletPage } from 'vue-library-printable-zine'
 
 export default {
   components: { Booklet, BookletPage }
