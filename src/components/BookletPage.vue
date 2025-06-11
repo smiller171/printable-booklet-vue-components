@@ -38,11 +38,9 @@ defineProps({
   break-before: avoid;
 }
 
-/* .booklet-page > * {
-  break-inside: avoid;
-  break-before: avoid;
-  break-after: avoid;
-} */
+.page-0 {
+  visibility: hidden;
+}
 
 @media print {
   .booklet-page {
@@ -51,6 +49,9 @@ defineProps({
     width: 25%;
     height: 50%;
     print-color-adjust: exact;
+  }
+  .page-0 {
+    display: none;
   }
   .page-1 {
     order: 2;

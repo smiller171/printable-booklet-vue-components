@@ -8,6 +8,7 @@ const props = defineProps({
 
 <template>
   <div class="booklet" :class="['booklet-' + orientation]">
+    <BookletPage pageNumber=0></BookletPage>
     <slot>
       <BookletPage :pageNumber=1></BookletPage>
       <BookletPage :pageNumber=2></BookletPage>
