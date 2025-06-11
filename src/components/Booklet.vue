@@ -40,12 +40,12 @@ const props = defineProps({
 
 @page landscape {
   size: landscape;
-  margin: 0;
+  margin: .25in;
 }
 
 @page portrait {
   size: portrait;
-  margin: 0;
+  margin: .25in;
 }
 
 @media print {
