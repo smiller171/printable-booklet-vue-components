@@ -8,16 +8,18 @@ const props = defineProps({
 
 <template>
   <div class="booklet" :class="['booklet-' + orientation]">
+    <BookletPage pageNumber=0></BookletPage>
     <slot>
-      <BookletPage :pageNumber=1></BookletPage>
-      <BookletPage :pageNumber=2></BookletPage>
-      <BookletPage :pageNumber=3></BookletPage>
-      <BookletPage :pageNumber=4></BookletPage>
-      <BookletPage :pageNumber=5></BookletPage>
-      <BookletPage :pageNumber=6></BookletPage>
-      <BookletPage :pageNumber=7></BookletPage>
-      <BookletPage :pageNumber=8></BookletPage>
+      <BookletPage pageNumber=1></BookletPage>
+      <BookletPage pageNumber=2></BookletPage>
+      <BookletPage pageNumber=3></BookletPage>
+      <BookletPage pageNumber=4></BookletPage>
+      <BookletPage pageNumber=5></BookletPage>
+      <BookletPage pageNumber=6></BookletPage>
+      <BookletPage pageNumber=7></BookletPage>
+      <BookletPage pageNumber=8></BookletPage>
     </slot>
+    <BookletPage pageNumber=0></BookletPage>
   </div>
 
 </template>
@@ -28,14 +30,13 @@ const props = defineProps({
   flex-wrap: wrap;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   break-inside: avoid;
   break-after: auto;
   gap: 0;
-  /*   gap: 1em; */
-  /* height: 100vh; */
+  max-width: 50em;
 }
 
 @page landscape {
@@ -58,6 +59,9 @@ const props = defineProps({
     justify-content: center;
     gap: 0;
     margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
     width: 100vw;
   }
 
