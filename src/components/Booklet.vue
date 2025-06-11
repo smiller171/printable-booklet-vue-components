@@ -31,7 +31,7 @@ const props = defineProps({
   margin-bottom: 1em;
   margin-left: 1em;
   margin-right: 1em;
-  justify-content: flex-start;
+  justify-content: center;
   break-inside: avoid;
   break-after: auto;
   gap: 0;
