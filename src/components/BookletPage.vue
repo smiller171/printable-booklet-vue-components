@@ -24,14 +24,13 @@ defineProps({
 .booklet-page {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex-basis: 40%;
   justify-content: space-between;
   align-items: center;
-  height: 25em;
+  aspect-ratio: 19/25;
   max-width: 19em;
-  min-width: 19em;
+  min-width: 5em;
   border: 1px solid black;
-  /*   border-radius: 1em; */
   padding: 1rem;
   break-after: avoid;
   break-inside: avoid;
@@ -48,6 +47,8 @@ defineProps({
     min-width: 0;
     width: 25%;
     height: 50%;
+    flex-basis: unset;
+    aspect-ratio: unset;
     print-color-adjust: exact;
   }
   .page-0 {
