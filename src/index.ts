@@ -1,4 +1,4 @@
-export { Booklet, BookletPage } from "./components"
+export { Booklet, BookletPage, PrintSettings } from "./components"
 
 // export { useGitHubUser } from "./composables"
 
